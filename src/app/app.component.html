@@ -9,6 +9,11 @@
           class="mat-icon-rtl-dashboard"></mat-icon>
         Dashboard
       </a>
+      <a mat-list-item routerLink="/users">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="dashboard"
+          class="mat-icon-rtl-dashboard"></mat-icon>
+        User Management
+      </a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -32,36 +37,6 @@
     </mat-toolbar>
     <div class="container">
       <router-outlet></router-outlet>
-      <div class="flex-card">
-        <mat-card>
-          <mat-card-content>
-            <h4>Total sales</h4>
-            <h1>3 Sales</h1>
-            <p>01-02-03</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-content>
-            <h4>Total sales</h4>
-            <h1>3 Sales</h1>
-            <p>01-02-03</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-content>
-            <h4>Total sales</h4>
-            <h1>3 Sales</h1>
-            <p>01-02-03</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-content>
-            <h4>Total sales</h4>
-            <h1>3 Sales</h1>
-            <p>01-02-03</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

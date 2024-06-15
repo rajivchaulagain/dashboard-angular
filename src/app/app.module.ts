@@ -14,10 +14,18 @@ import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UsersComponent } from './users/users.component';
+import { DataTableComponent } from './data-table/data-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'users', component: UsersComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
@@ -25,7 +33,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    UsersComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +47,12 @@ const appRoutes: Routes = [
     MatListModule,
     MatIconModule,
     MatCardModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

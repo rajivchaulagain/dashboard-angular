@@ -1,0 +1,27 @@
+.full-width-table {
+  width: 100%;
+}
+
+.heading{
+  font-weight: 800;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container{
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
