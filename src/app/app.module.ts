@@ -16,16 +16,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UsersComponent } from './users/users.component';
 import { DataTableComponent } from './data-table/data-table.component';
+import { CardComponent } from './card/card.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ProductsComponent } from './products/products.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'products', component: ProductsComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
@@ -35,7 +38,9 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProfileComponent,
     UsersComponent,
-    DataTableComponent
+    DataTableComponent,
+    ProductsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
