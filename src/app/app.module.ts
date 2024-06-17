@@ -23,12 +23,16 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ProductsComponent } from './products/products.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { TableCheckoutCardComponent } from './table-checkout/table-checkout.component';
+import { TableCardsComponent } from './table-cards/table-cards.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'users', component: UsersComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'checkout', component: CheckoutComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
@@ -40,7 +44,10 @@ const appRoutes: Routes = [
     UsersComponent,
     DataTableComponent,
     ProductsComponent,
-    CardComponent
+    CardComponent,
+    TableCheckoutCardComponent,
+    TableCardsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
