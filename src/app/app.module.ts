@@ -22,10 +22,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatSliderModule} from '@angular/material/slider';
 import { ProductsComponent } from './products/products.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { TableCheckoutCardComponent } from './table-checkout/table-checkout.component';
 import { TableCardsComponent } from './table-cards/table-cards.component';
+import { MenuComponent } from './menu/menu.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -33,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'checkout', component: CheckoutComponent },
+  { path: 'menus', component: MenuComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
@@ -47,7 +50,8 @@ const appRoutes: Routes = [
     CardComponent,
     TableCheckoutCardComponent,
     TableCardsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,8 @@ const appRoutes: Routes = [
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

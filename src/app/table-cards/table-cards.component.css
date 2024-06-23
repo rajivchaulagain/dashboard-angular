@@ -7,7 +7,7 @@
 
 .table-card {
   flex: 1;
-  min-width: 500px;
+  min-width: 50%s;
   height: 150px;
   display: flex;
   flex-direction: column;
