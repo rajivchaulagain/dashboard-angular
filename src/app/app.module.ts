@@ -28,6 +28,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { TableCheckoutCardComponent } from './table-checkout/table-checkout.component';
 import { TableCardsComponent } from './table-cards/table-cards.component';
 import { MenuComponent } from './menu/menu.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
     TableCardsComponent,
     CheckoutComponent,
     MenuComponent,
+    StarRatingComponent,
   ],
   imports: [
     BrowserModule,

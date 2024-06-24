@@ -6,6 +6,7 @@
                     <mat-card-content>
                         <h2>{{product.name}}</h2>
                         <p>{{product.price | currency}}</p>
+                        <app-star-rating [rating]="product.rating || 0"></app-star-rating>
                     </mat-card-content>
                 </mat-card>
             </div>
